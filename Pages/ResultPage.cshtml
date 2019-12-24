@@ -1,0 +1,14 @@
+﻿@page
+@model sugarrepo.Pages.ResultPageModel
+@{
+}
+@if (Model.sugar == null)
+{
+    <p>Product Not Found</p>
+}
+else
+{
+<p>@Model.sugar.UPCNo</p>
+<p>@Model.sugar.NDBNo</p>
+<p>@Model.sugar.LongName</p>
+}
